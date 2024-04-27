@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  color: #e1e8ee;
+}
+.header{
+  position:fixed ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo{
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #dfebf6;
+}
+.logo::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   background:#29353C;
+   animation: showRight 1s ease forwards;
+   animation-delay: .4s;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+} 
+
+.navbar a{
+    text-decoration: none;
+    margin-left: 25px;
+    color: #dfebf6;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s;
+ 
+}
+.navbar a:hover,
+.navbar a.active{
+  color: #3d90b6;
+}
+#contact{
+  display: flex;
+  background:#29353C;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10%; 
+}
+
+.info{
+  display: block;
+  width: 600px;
+}
+.home-content{
+  align-items: center;
+  display: flex;
+  flex-direction: row; 
+  max-width:  900px;
+}
+.home-content h1{
+  position: relative;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 1.2;
+}
+.home-content h1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background:#29353C;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.home-content h3{
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  color: #3d90b6;
+  margin-bottom: 8px;
+
+}
+.home-content h3::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background:#29353C;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.3s;
+}
+
+.info h1{
+  text-align: start;
+  font-size: 40px;
+  margin-bottom: 10px;
+  width: 500px;
+}
+.home-content p::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background:#29353C;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.9s;
+}
+.dream{
+  color: #3d90b6;
+}
+
+.home-content .contact{
+  display: flex;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+}
+.form{
+  width: 700px;
+  margin: 5vh auto 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 50px;
+}
+
+.form h1{
+  text-align: center;
+}
+.form button{
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: rgb(245, 235, 235);
+  background-color:#3d90b6;
+  border: none;
+  border-radius: 5px;
+}
+.input-control{
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+}
+.input-control input{
+  display: block;
+  border: 2px solid white;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 12px;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #dfebf6;
+
+}
+.submit:hover{
+  opacity: .5;
+  transition: .6s;
+}
+.submit:active{
+  opacity: 1;
+}
+ .Message{
+  height: 200px;
+}
+.input-control input:focus{
+  outline: none;
+}
+.input-control.success input{
+  border-color: rgb(50, 150, 50);
+}
+.input-control.error input{
+  border-color: rgb(189, 36, 36);
+}
+.input-control .error{
+  color: rgb(230, 17, 17);
+  height: 13px;
+}
+
+
+@keyframes showRight{
+  100%{
+    width: 0;
+  }
+}
+@keyframes manipActiveHover{
+  100%{
+    pointer-events: auto;
+  }
+}
+
+
